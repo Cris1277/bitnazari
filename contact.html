@@ -49,25 +49,16 @@
         <main class="layout-main">
             <section class="main-content">
                 <form action="https://formspree.io/f/mgvvblvj" id="mainForm" method="post">
-
                     <h3>Hablemos !!</h3>
                     <label for="name">Nombre</label>
                     <input type="text" name="nombre" placeholder="Introduzca su nombre" required>
-
+                
                     <label for="surname">Apellidos</label>
                     <input type="text" name="apellido" placeholder="Introduzca su apellido" required>
-
+                
                     <label for="email">Correo</label>
                     <input type="email" name="email" placeholder="Introduzca su correo" required>
-
-                    <!--<label for="money">Presupuesto</label>
-                    <select name="presupuesto" id="presupuesto" required>
-                        <option value="Low cost">Básico</option>
-                        <option value="Standard">Estándar</option>
-                        <option value="Medium">Medio</option>
-                        <option value="High">Alto</option>
-                    </select> -->
-
+                
                     <label for="money"> Nivel de Complejidad</label>
                     <select name="complejidad" id="complejidad" required>
                         <option value="" disabled selected>Seleccione el nivel de complejidad</option>
@@ -76,19 +67,17 @@
                         <option value="Funciones avanzadas">Funciones avanzadas</option>
                         <option value="Experiencia premium">Experiencia premium</option>
                     </select>
-
-
+                
                     <label for="information">Información adicional</label>
-                    <textarea name="mensaje" id="info"
-                        placeholder="Añade una breve descripción sobre tu proyecto"></textarea>
-
-
+                    <textarea name="mensaje" id="info" placeholder="Añade una breve descripción sobre tu proyecto"></textarea>
+                
                     <div class="g-recaptcha" data-sitekey="6Lew-LoqAAAAAFGQmMDyXU9F-0YkVVm3uX4_1Nt3"></div>
-
+                
                     <input class="btn" type="submit" value="Contactar">
                     <div id="sendingMessage" style="display: none; font-size: 18px; color: #2ECC71; text-align: center; padding: 10px; font-weight: bold;">Enviando...</div>
-
                 </form>
+                
+
             </section>
         </main>
 
@@ -101,6 +90,9 @@
         </footer>
     </div>
 <!--Aquí va nuestro script para el backend-->
+<script>
+    document.addEventListener("DOMContentLoaded",function(){document.getElementById('mainForm').addEventListener('submit',function(e){var t=grecaptcha.getResponse();if(t.length===0){alert("Por favor, confirma que no eres un robot.");e.preventDefault();}else{document.getElementById("sendingMessage").style.display="block";}});});
+</script>
 
     <script>
         function toggleNavbar() { var a = document.getElementById("navbar"); a.classList.toggle("hidden") }
