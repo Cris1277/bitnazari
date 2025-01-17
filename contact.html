@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/B (14).png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6Leo5pYqAAAAAKunpikJvjWKjKlxD82WMIwTufjb"></script>
+
+    <title>www.bitnazari.com</title>
+</head>
+
+<body>
+    <div class="layout">
+        <header class="layout-header">
+            <div class="header-logo">
+                <img class="logo" src="./assets/img/B (14).png" alt="logo">
+            </div>
+            <h1 class="title-name">
+                <a href="index.html">bitnazari.com</a>
+            </h1>
+
+            <button class="toggle-btn" onclick="toggleNavbar()">&#9776;</button>
+        </header>
+
+        <nav class="layout-nav navbar" id="navbar">
+            <ul>
+                <li id="first"><a href="./index.html">Inicio</a></li>
+                <li><a href="./about-us.html">Sobre nosotros</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li id="last"><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main class="layout-main">
+            <section class="main-content">
+                <form action="https://formspree.io/f/mgvvblvj" id="mainForm" method="post">
+
+                    <h3>Hablemos !!</h3>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Introduzca su nombre" required>
+
+                    <label for="surname">Apellidos</label>
+                    <input type="text" name="apellido" placeholder="Introduzca su apellido" required>
+
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" placeholder="Introduzca su correo" required>
+
+                    <!--<label for="money">Presupuesto</label>
+                    <select name="presupuesto" id="presupuesto" required>
+                        <option value="Low cost">Básico</option>
+                        <option value="Standard">Estándar</option>
+                        <option value="Medium">Medio</option>
+                        <option value="High">Alto</option>
+                    </select> -->
+
+                    <label for="money"> Nivel de Complejidad</label>
+                    <select name="complejidad" id="complejidad" required>
+                        <option value="" disabled selected>Seleccione el nivel de complejidad</option>
+                        <option value="Diseño simple">Diseño simple</option>
+                        <option value="Funcionalidades estándar">Funcionalidades estándar</option>
+                        <option value="Funciones avanzadas">Funciones avanzadas</option>
+                        <option value="Experiencia premium">Experiencia premium</option>
+                    </select>
+
+
+                    <label for="information">Información adicional</label>
+                    <textarea name="mensaje" id="info"
+                        placeholder="Añade una breve descripción sobre tu proyecto"></textarea>
+
+
+                    <div class="g-recaptcha" data-sitekey="6Leo5pYqAAAAAKqzrW10rOC8r_QZYXgCRZNVk4Tb"></div>
+
+
+                    <input class="btn" type="submit" value="Contactar">
+                    <div id="sendingMessage" style="display: none; font-size: 18px; color: #2ECC71; text-align: center; padding: 10px; font-weight: bold;">Enviando...</div>
+
+                </form>
+            </section>
+        </main>
+
+        <footer class="layout-footer">
+            <p>Desarrollado por <span>bitnazari &copy;</span> Todos los derechos reservados. <br>
+                Más proyectos disponibles en <a href="./servicios.html">www.bitnazari.com</a>
+                <br> <a href="./cookies.html">Política de cookies</a>
+            </p>
+
+        </footer>
+    </div>
+<!--Aquí va nuestro script para el backend-->
+
+    <script>
+        function toggleNavbar() { var a = document.getElementById("navbar"); a.classList.toggle("hidden") }
+    </script>
+
+</body>
+
+</html>
