@@ -49,8 +49,7 @@
 
         <main class="layout-main">
             <section class="main-content">
-               <form action="https://formspree.io/f/mgvvblvj" id="mainForm" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return hideForm()">
-
+              <form action="https://formspree.io/f/mgvvblvj" id="mainForm" method="post" onsubmit="return hideForm()">
 
                     <h3>Hablemos !!</h3>
                     <label for="name">Nombre</label>
@@ -94,33 +93,7 @@
     <script>document.addEventListener("DOMContentLoaded",function(){document.getElementById('mainForm').addEventListener('submit',function(e){var t=grecaptcha.getResponse();if(t.length===0){alert("Por favor, confirma que no eres un robot.");e.preventDefault();}else{document.getElementById("sendingMessage").style.display="block";}});});</script>
 
    
-   <script>
-    // Verificar si estamos regresando de Formspree
-    document.addEventListener("DOMContentLoaded", function () {
-        if (localStorage.getItem("formSubmitted") === "true") {
-            localStorage.removeItem("formSubmitted"); // Limpiar la marca
-            location.reload(); // Recargar la página
-        }
-    });
-
-    function hideForm() {
-        // Mostrar el mensaje "Enviando..."
-        document.getElementById("sendingMessage").style.display = "block";
-
-        // Desactivar los campos del formulario para evitar interacción
-        const formElements = document.getElementById("mainForm").elements;
-        for (let i = 0; i < formElements.length; i++) {
-            formElements[i].disabled = true;
-        }
-
-        // Guardar una marca en localStorage para saber que el formulario fue enviado
-        localStorage.setItem("formSubmitted", "true");
-
-        // Permitir la redirección natural a Formspree
-        return true;
-    }
-</script>
-
+   <script>function hideForm(){document.getElementById("sendingMessage").style.display="block";document.getElementById("sendingMessage").style.display="none";setTimeout(function(){location.reload();},2000);return true;}</script>
 
 
     <script>
