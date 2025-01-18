@@ -11,42 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
     <title> www.bitnazari.com</title>
-    <style>
-        .section-article {
-            height: 280px;
-            margin: 1rem;
-            padding: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            background-color: #f9f9f9;
-            transition: all 0.3s;
-        }
-
-        @media (max-width: 968px) {
-            .section-article {
-                height: 580px;
-            }
-            .layout-footer{
-                height: 150px;
-            }
-            
-        }
-
-        @media (max-width: 500px) {
-            .section-article {
-                height: 350px;
-            }
-            .layout-footer{
-                height: 150px;
-            }
-           .content-article img {
-                height: 200px;
-                width: 200px;
-            }
-        }
-    </style>
+    <style>.span-1{color:aliceblue;font-size:2rem;text-align:center;font-family:"caveat"}.toggle-btn{transform:translateY(-924%)}@media (min-width:980px){.section-article{height:280px;margin:1rem;padding:1.1rem;border:1px solid #ccc;border-radius:5px;box-shadow:0 0 5px rgb(0 0 0 / .1);background-color:#f9f9f9;transition:all 0.3s}}@media (max-width:500px){.span-1{font-size:1.4rem}.section-article{height:345px}.layout-footer{height:150px}.article-content{overflow:hidden}.article-content img{width:100%;max-width:300px;object-fit:cover;display:block;border-radius:5px}}.article-content{overflow:hidden}.article-content img{width:100%;max-width:300px;object-fit:cover;display:block;border-radius:5px}.article-content p{font-weight:600}@media (max-width:968px) and (min-width:700px){.section-article{width:90%;height:340px;overflow:hidden;margin-left:43px}.article-content{width:100%}.article-content img{width:100%;max-width:300px}.toggle-btn{transform:translateY(-852%)}}</style>
 </head>
 
 <body>
@@ -57,7 +30,9 @@
             </div>
 
             <h1 class="title-name">
-                <a href="index.html">bitnazari.com</a>
+                <a href="index.html">bitnazari.com <br>
+                    <span class="span-1">by Cris Serrano</span>
+                </a>
             </h1>
             <button class="toggle-btn" onclick="toggleNavbar()">&#9776;</button>
         </header>
@@ -85,14 +60,14 @@
 
                     <article class="section-article">
                         <div class="article-content">
-                            <h2>Proyecto Fullstack</h2>
+                            <h2>Página de bitnazari</h2>
                             <img src="./assets/img/project4.png" alt="imagen" style="object-fit: cover;">
-                            <p>Frontend + Backend </p>
+                            <p>Proyecto fullstack</p>
                         </div>
                     </article>
                 </a>
 
-                <a href="https://cris1277.github.io/portfolio/" style="text-decoration: none; color: black;">
+                <a href="https://cris1277.github.io/calculator/" style="text-decoration: none; color: black;">
 
                     <article class="section-article">
                         <div class="article-content">
@@ -129,26 +104,26 @@
 
                 <a href="https://cris1277.github.io/calculator/" style="text-decoration: none; color: black;">
 
-                   <article class="section-article">
-                    <div class="article-content">
-                        <h2>Calculadora JS</h2>
-                        <img src="./assets/img/project5.png" alt="" style="object-fit: cover;">
-                        <p>Calculadora con datos curiosos</p>
-                    </div>
-                </article> 
+                    <article class="section-article">
+                        <div class="article-content">
+                            <h2>Calculadora JS</h2>
+                            <img src="./assets/img/project5.png" alt="" style="object-fit: cover;">
+                            <p>Calculadora con datos curiosos</p>
+                        </div>
+                    </article>
                 </a>
-                
+
                 <a href="https://cris1277.github.io/sunpath/" style="text-decoration: none; color: black;">
 
                     <article class="section-article" id="last-article">
-                    <div class="article-content">
-                        <h2>Sun <br>Path</h2>
-                        <img src="./assets/img/project7.png" alt="" style="object-fit: cover;">
-                        <p>Aplicación meteorológica</p>
-                    </div>
-                </article>
+                        <div class="article-content">
+                            <h2>Sun <br>Path</h2>
+                            <img src="./assets/img/project7.png" alt="" style="object-fit: cover;">
+                            <p>Aplicación meteorológica</p>
+                        </div>
+                    </article>
                 </a>
-                
+
 
             </section>
 
