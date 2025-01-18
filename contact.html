@@ -10,16 +10,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Script de reCAPTCHA (asíncrono) -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
+
     <style>
-         @media (max-width: 768px) {
-            .layout-footer{
+        @media (max-width: 768px) {
+            .layout-footer {
                 height: 150px;
             }
+        }
+
+        .span-1 {
+            color: aliceblue;
+            font-size: 1.4rem;
+            text-align: center;
+            font-family: "caveat";
+        }
+
+        .toggle-btn {
+            transform: translateY(-924%);
         }
     </style>
     <title>www.bitnazari.com</title>
@@ -32,7 +52,9 @@
                 <img class="logo" src="./assets/img/B (14).png" alt="logo">
             </div>
             <h1 class="title-name">
-                <a href="index.html">bitnazari.com</a>
+                <a href="index.html">bitnazari.com <br>
+                    <span class="span-1">by Cris Serrano</span>
+                </a>
             </h1>
 
             <button class="toggle-btn" onclick="toggleNavbar()">&#9776;</button>
@@ -49,18 +71,18 @@
 
         <main class="layout-main">
             <section class="main-content">
-              <form action="https://formspree.io/f/mgvvblvj" id="mainForm" method="post" onsubmit="return hideForm()">
+                <form action="https://formspree.io/f/mgvvblvj" id="mainForm" method="post" onsubmit="return hideForm()">
 
                     <h3>Hablemos !!</h3>
                     <label for="name">Nombre</label>
                     <input type="text" name="nombre" placeholder="Introduzca su nombre" required>
-                
+
                     <label for="surname">Apellidos</label>
                     <input type="text" name="apellido" placeholder="Introduzca su apellido" required>
-                
+
                     <label for="email">Correo</label>
                     <input type="email" name="email" placeholder="Introduzca su correo" required>
-                
+
                     <label for="money"> Nivel de Complejidad</label>
                     <select name="complejidad" id="complejidad" required>
                         <option value="" disabled selected>Seleccione el nivel de complejidad</option>
@@ -69,14 +91,17 @@
                         <option value="Funciones avanzadas">Funciones avanzadas</option>
                         <option value="Experiencia premium">Experiencia premium</option>
                     </select>
-                
+
                     <label for="information">Información adicional</label>
-                    <textarea name="mensaje" id="info" placeholder="Añade una breve descripción sobre tu proyecto"></textarea>
-                
+                    <textarea name="mensaje" id="info"
+                        placeholder="Añade una breve descripción sobre tu proyecto"></textarea>
+
                     <div class="g-recaptcha" data-sitekey="6Lew-LoqAAAAAFGQmMDyXU9F-0YkVVm3uX4_1Nt3"></div>
-                
+
                     <input class="btn" type="submit" value="Contactar">
-                    <div id="sendingMessage" style="display: none; font-size: 18px; color: #2ECC71; text-align: center; padding: 10px; font-weight: bold;">Enviando...</div>
+                    <div id="sendingMessage"
+                        style="display: none; font-size: 18px; color: #2ECC71; text-align: center; padding: 10px; font-weight: bold;">
+                        Enviando...</div>
                 </form>
             </section>
         </main>
@@ -90,10 +115,10 @@
     </div>
 
 
-    <script>document.addEventListener("DOMContentLoaded",function(){document.getElementById('mainForm').addEventListener('submit',function(e){var t=grecaptcha.getResponse();if(t.length===0){alert("Por favor, confirma que no eres un robot.");e.preventDefault();}else{document.getElementById("sendingMessage").style.display="block";}});});</script>
+    <script>document.addEventListener("DOMContentLoaded", function () { document.getElementById('mainForm').addEventListener('submit', function (e) { var t = grecaptcha.getResponse(); if (t.length === 0) { alert("Por favor, confirma que no eres un robot."); e.preventDefault(); } else { document.getElementById("sendingMessage").style.display = "block"; } }); });</script>
 
-   
-   <script>function hideForm(){document.getElementById("sendingMessage").style.display="block";document.getElementById("sendingMessage").style.display="none";setTimeout(function(){location.reload();},1000);return true;}</script>
+
+    <script>function hideForm() { document.getElementById("sendingMessage").style.display = "block"; document.getElementById("sendingMessage").style.display = "none"; setTimeout(function () { location.reload(); }, 1000); return true; }</script>
 
 
     <script>
