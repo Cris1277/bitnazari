@@ -19,6 +19,7 @@
 - 🔸 **Google Fonts + Font Awesome**
 - 🔸 Diseño adaptativo con media queries
 - 🔸 Estética moderna y limpia sin frameworks externos
+- 🔸 Google reCAPTCHA
 
 ---
 
@@ -29,8 +30,6 @@
 - ✅ Formulario funcional para contacto directo
 - ✅ Botón de menú adaptativo (hamburguesa en móviles)
 - ✅ Integración con redes sociales
-- ✅ Componentes reutilizables y código limpio
-
 ---
 
 ## 📁 Estructura del proyecto
