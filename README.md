@@ -85,6 +85,8 @@ cd bitnazari
 2. Abre `index.html` o cualquier otra página (`about-us.html`, `contact.html`) en tu navegador favorito.
 
 ---
+> ⚠️ Nota: los archivos CSS y JS están minificados para optimizar el rendimiento en producción.  
+> Si deseas revisar el código fuente original con comentarios y estructura legible, puedo facilitarlo bajo solicitud.
 
 ## 🧑‍💻 Autor
 
