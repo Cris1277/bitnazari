@@ -1,38 +1,38 @@
+# 🌐 BitNazari — Personal Freelance Website (HTML, CSS, and JS)
 
-# 🌐 BitNazari — Página Personal Freelance (HTML, CSS y JS)
-
-**BitNazari.com** es una página web personal que funciona como carta de presentación para servicios freelance de desarrollo web y QA testing. Desarrollada desde cero con **HTML5, CSS3 y JavaScript Vanilla**, esta landing es completamente responsive, optimizada para navegadores modernos y diseñada para transmitir profesionalismo con un enfoque personal.
-
----
-
-## 🔗 Demo en vivo
-
-👉 [Ver demo en vivo](https://www.bitnazari.com)
+**BitNazari.com** is a personal website that serves as a portfolio and introduction to freelance services in web development and QA testing. Built from scratch using **HTML5, CSS3, and Vanilla JavaScript**, this landing page is fully responsive, optimized for modern browsers, and designed to convey professionalism with a personal touch.
 
 ---
 
-## 🧩 Tecnologías utilizadas
+## 🔗 Live Demo
 
-- 🔸 **HTML5** semántico
-- 🔸 **CSS3** con diseño responsive y custom fonts
-- 🔸 **JavaScript Vanilla**
+👉 [View Live Demo](https://www.bitnazari.com)
+
+---
+
+## 🧩 Tech Stack
+
+- 🔸 **Semantic HTML5**
+- 🔸 **CSS3** with responsive design and custom fonts
+- 🔸 **Vanilla JavaScript**
 - 🔸 **Google Fonts + Font Awesome**
-- 🔸 Diseño adaptativo con media queries
-- 🔸 Estética moderna y limpia sin frameworks externos
+- 🔸 Adaptive design with media queries
+- 🔸 Clean, modern aesthetics without external frameworks
 - 🔸 Google reCAPTCHA
 
 ---
 
-## ✨ Características principales
+## ✨ Key Features
 
-- ✅ Diseño responsive adaptado a móviles, tablets y escritorio
-- ✅ Secciones modulares: *Sobre mí*, *Servicios*, *Contacto*
-- ✅ Formulario funcional para contacto directo
-- ✅ Botón de menú adaptativo (hamburguesa en móviles)
-- ✅ Integración con redes sociales
+- ✅ Responsive design for mobile, tablet, and desktop
+- ✅ Modular sections: *About Me*, *Services*, *Contact*
+- ✅ Functional contact form
+- ✅ Adaptive menu button (hamburger menu on mobile)
+- ✅ Social media integration
+
 ---
 
-## 📁 Estructura del proyecto
+## 📁 Project Structure
 
 ```
 📦 bitnazari/
@@ -56,39 +56,41 @@
 
 ---
 
-## 🎯 Objetivo del proyecto
+## 🎯 Project Purpose
 
-Este proyecto tiene como finalidad:
+The goal of this project is to:
 
-- Mostrar habilidades en diseño y maquetación profesional
-- Demostrar conocimientos en estructura web, responsividad y experiencia de usuario
-- Presentar servicios de desarrollo y testing web de forma clara y profesional
-
----
-
-## 📌 Para qué tipo de usuario está diseñado
-
-- Clientes potenciales que buscan un desarrollador junior freelance
-- Personas interesadas en mejorar su web existente
-- Agencias buscando colaboradores externos en QA o frontend
+- Showcase skills in professional layout and web design
+- Demonstrate knowledge of web structure, responsiveness, and user experience
+- Present web development and testing services clearly and professionally
 
 ---
 
-## 🚀 Cómo visualizar el proyecto localmente
+## 📌 Target Audience
 
-1. Clona el repositorio:
+- Potential clients looking for a junior freelance web developer
+- Individuals interested in improving their existing website
+- Agencies seeking external collaborators for QA or frontend work
+
+---
+
+## 🚀 How to View the Project Locally
+
+1. Clone the repository:
 ```bash
-git clone https://github.com/tuusuario/bitnazari.git
+git clone https://github.com/yourusername/bitnazari.git
 cd bitnazari
 ```
 
-2. Abre `index.html` o cualquier otra página (`about-us.html`, `contact.html`) en tu navegador favorito.
+2. Open `index.html` or any other page (`about-us.html`, `contact.html`) in your preferred browser.
 
 ---
-> ⚠️ Nota: los archivos CSS y JS están minificados para optimizar el rendimiento en producción.  
-> Si deseas revisar el código fuente original con comentarios y estructura legible, puedo facilitarlo bajo solicitud.
+> ⚠️ Note: CSS and JS files are minified to optimize performance in production.  
+> If you wish to review the original source code with comments and clean structure, I can provide it upon request.
 
-## 🧑‍💻 Autor
+---
+
+## 🧑‍💻 Author
 
 **Cristian Serrano**  
 🔗 [GitHub - Cris1277](https://github.com/Cris1277)  
@@ -96,7 +98,7 @@ cd bitnazari
 
 ---
 
-## ⚠️ Derechos de autor
+## ⚠️ Copyright
 
-© 2025 Cristian Serrano. Todos los derechos reservados.  
-Este código y diseño pertenecen exclusivamente a su autor y no pueden ser reutilizados, copiados o modificados sin permiso explícito.
+© 2025 Cristian Serrano. All rights reserved.  
+This code and design are the exclusive property of the author and may not be reused, copied, or modified without explicit permission.
